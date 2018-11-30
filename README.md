@@ -1,2 +1,2 @@
 # spartanblockchain.github.io
-Official website of Spartan Blockchain
+The official website of Spartan Blockchain.
