@@ -43,7 +43,7 @@ h5 {
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: 0em; /* Adjust as needed */
   animation: 
-    typing 3s steps(25, end),
+    typing 4s steps(26, end),
     blinking-cursor 1s step-end infinite;
 }
 
@@ -442,7 +442,7 @@ img::-moz-selection {
 
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
+  .sidenav {padding-top: 15px; ; left: -200px}
   .sidenav a {font-size: 18px;}
 }
 
