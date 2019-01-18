@@ -39,17 +39,17 @@ h5 {
   /*font-family: monospace;  Web-safe typewriter-like font */
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid green; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
+   /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: 0em; /* Adjust as needed */
   animation: 
-    typing 4s steps(26, end),
+    typing 3s steps(26, end),
     blinking-cursor 1s step-end infinite;
 }
 
 .typewriter h2 {
   overflow: hidden;
-  white-space: nowrap;
+  
   animation:
     fade-in 3s;
 }
@@ -442,10 +442,13 @@ img::-moz-selection {
 
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px; ; left: -200px}
+  .sidenav {padding-top: 15px; ; left: 30px}
   .sidenav a {font-size: 18px;}
 }
 
+@media screen and (max-width: 1100px) {
+  .sidenav {display: none}
+}
 
 
 
