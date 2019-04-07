@@ -263,7 +263,7 @@ img::-moz-selection {
 /* Dropdown Button */
 #mainNav .dropbtn {
   font-size: 12px;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 0px;
   text-transform: uppercase;
   border: none;
@@ -395,7 +395,7 @@ img::-moz-selection {
 
   #mainNav.is-fixed .dropbtn {
     font-size: 12px;
-    font-weight: 800;
+    font-weight: 700;
     letter-spacing: 0px;
     text-transform: uppercase;
     border: none;
