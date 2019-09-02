@@ -313,21 +313,7 @@ img::-moz-selection {
 
 
 @media only screen and (min-width: 992px) {
-  @keyframes fade-in {
-    from {opacity: 0; transform: scale(.8,.8)}
-    to {opacity: 1;}
-    100% {opacity: 1;}
-  }
-  .fade-in-element {
-    animation: fade-in 1.4s;
-  }
-  .hidden {
-    opacity: 0;
-    animation: fade-in 2s linear 1.5s 1 normal forwards;
-  }
-  .no-opacity {
-    opacity: 0;
-  }
+
   
   #mainNav {
     border-bottom: 1px solid transparent;
@@ -352,6 +338,21 @@ img::-moz-selection {
 }
 
 @media only screen and (min-width: 992px) {
+  @keyframes fade-in {
+    from {opacity: 0; transform: scale(.8,.8)}
+    to {opacity: 1;}
+    100% {opacity: 1;}
+  }
+  .fade-in-element {
+    animation: fade-in 1.4s;
+  }
+  .hidden {
+    opacity: 0;
+    animation: fade-in 2s linear 1.5s 1 normal forwards;
+  }
+  .no-opacity {
+    opacity: 0;
+  }
   #mainNav {
     -webkit-transition: background-color 0.2s;
     transition: background-color 0.2s;
@@ -474,6 +475,8 @@ img::-moz-selection {
 
 @media screen and (max-width: 1100px) {
   .sidenav {display: none}
+  .no-opacity {opacity: 1;}
+  .hidden {opacity: 1;}
 }
 
 
