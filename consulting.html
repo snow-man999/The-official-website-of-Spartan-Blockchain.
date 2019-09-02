@@ -1,274 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
 
-    <meta charset="utf-8">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <meta charset="utf-8">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <title>Spartan Blockchain</title>
+  <title>Spartan Blockchain</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom fonts for this template -->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+    rel='stylesheet' type='text/css'>
 
-    <!-- Custom styles for this template -->
-    <link href="css/clean-blog.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/clean-blog.css" rel="stylesheet">
 
-  </head>
+</head>
 
-  <body>
+<body onload="animateHTML().init();">
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-      <div class="container">
-        <a href="index.html">
-          <img src = "img/logo2.jpg"  style="height: 50px">
-        </a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fas fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <div class="dropdown">
-                <button class="dropbtn"><a href="index.html">About Us</a></button>
-                <div class="dropdown-content">
-                  <a class="page-scroll" href="index.html#who-are-we">Who Are We?</a>
-                  <a class="page-scroll" href="index.html#our-pillars">Our Pillars</a>
-                  <a class="page-scroll" href="index.html#meet-the-team">Meet the Team</a>
-                </div>
-              </div>
-            </li>
-            <li class="nav-item">
-              <div class="dropdown">
-                <button class="dropbtn"><a href="education.html">Education</a></button>
-                <div class="dropdown-content">
-                  <a class="page-scroll" href="education.html#what-is-blockchain">What is Blockchain?</a>
-                  <a class="page-scroll" href="education.html#our-workshops">Our Workshops</a>
-                  <a class="page-scroll" href="education.html#blockchain-foundations-and-applications">Blockchain: Foundations and Applications</a>
-                </div>
-              </div>
-            </li>
-            <li class="nav-item">
-              <div class="dropdown">
-                <button class="dropbtn"><a href="consulting.html">Spartan Blockchain Solutions</a></button>
-                <div class="dropdown-content">
-                  <a class="page-scroll" href="#spartan-blockchain-solutions">Consulting Services</a>
-                  <a class="page-scroll" href="#research-case-studies">Research Case Studies</a>
-                  <a class="page-scroll" href="#sbs-team">Our Team</a>
-                  <a class="page-scroll" href="#project-proposals">Project Proposals</a>
-                </div>
-              </div>
-            </li>
-            <li class="nav-item">
-              <div class="dropdown">
-                <button class="dropbtn"><a href="events.html" style="color: green">Innovation Competition</a></button>
-                <div class="dropdown-content">
-                  <a class="page-scroll" href="events.html#meetup">Community Meetup</a>
-                  <a class="page-scroll" href="events.html#case-competition">Pitch Competition</a>
-                  <a class="page-scroll" href="events.html#upcoming-events">Other Events</a>
-                </div>
-              </div>
-            </li>
-            <li class="nav-item">
-              <div class="dropdown">
-                <button class="dropbtn"><a href="get-involved.html">Get Involved</a></button>
-                <div class="dropdown-content">
-                  <a class="page-scroll" href="get-involved.html#open-positions">Open Positions</a>
-                  <a class="page-scroll" href="get-involved.html#become-a-sponsor">Become a Sponsor</a>
-                  <a class="page-scroll" href="get-involved.html#join-our-newsletter">Join Our Newsletter</a>
-                  <a class="page-scroll" href="get-involved.html#contact-us">Contact Us</a>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Side navigation -->
-    <div class="sidenav" style="left: 20px">
-      <a class="page-scroll" style="color: rgb(182, 182, 182); padding: 10px 3px 0px 3px"><b>Spartan Blockchain Solutions</b></a>
-      <hr>
-      <a class="page-scroll" href="#spartan-blockchain-solutions">Consulting Services</a>
-      <a class="page-scroll" href="#research-case-studies">Research Case Studies</a>
-      <a class="page-scroll" href="#sbs-team">Our Team</a>
-      <a class="page-scroll" href="#project-proposals">Project Proposals</a>
-    </div>
-
-    <!-- Page Header -->
-    <header class="masthead hero-bkg-animated" style="background-image: url('img/diagonal.jpg')">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-lg-10 mx-auto" style="left: 80px">
-            <div class="typewriter page-heading">
-              <h2 style="text-align: right; font-size: 50px">SPARTAN BLOCKCHAIN SOLUTIONS</h1>
-              <hr class="style-two">
-              <h2 style="color: white; font-size: 18px; font-weight: 400; text-align: right">PROVIDING BLOCKCHAIN SOLUTIONS TO SATISFY THE NEEDS OF YOUR BUSINESS OR ORGANIZATION</h2>
-              <div style="float: right; padding: 30px">
-                  <a class="btn page-scroll" href="#spartan-blockchain-solutions" style="background-color: green; color: white; border-color: green; border-radius: 8px">Learn More</a>
-                  <a class="btn page-scroll" href="get-involved.html#join-our-newsletter" style="background-color: rgba(0, 128, 0, 0); color: white; border-color: green; border-radius: 8px">Join Our Newsletter &rarr;</a>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a href="index.html">
+        <img src="img/sbs.png" style="height: 40px">
+      </a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <div class="dropdown">
+              <button class="dropbtn"><a href="index.html">Home</a></button>
+              <div class="dropdown-content" style="background-color: white">
+                <a class="page-scroll" href="index.html#who-are-we">Our Services</a>
+                <a class="page-scroll" href="index.html#our-pillars">Our Pillars</a>
+                <a class="page-scroll" href="index.html#project-proposals">Project Proposals</a>
               </div>
             </div>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <button class="dropbtn"><a href="consulting.html">About Us</a></button>
+              <div class="dropdown-content">
+                <a class="page-scroll" href="#who-are-we">Who Are We?</a>
+                <a class="page-scroll" href="#sbs-team">Our Team</a>
+                <a class="page-scroll" href="#advisors">Our Advisors</a>
+                <a class="page-scroll" href="#partners">Our Partners</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <button class="dropbtn"><a href="education.html">Education</a></button>
+              <div class="dropdown-content">
+                <a class="page-scroll" href="education.html#what-is-blockchain">What is Blockchain?</a>
+                <a class="page-scroll" href="education.html#our-workshops">Our Workshops</a>
+                <a class="page-scroll" href="education.html#blockchain-foundations-and-applications">Blockchain:
+                  Foundations and Applications</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <button class="dropbtn"><a href="events.html">Events</a></button>
+              <div class="dropdown-content">
+                <a class="page-scroll" href="events.html#meetup">Community Meetup</a>
+                <a class="page-scroll" href="events.html#case-competition">Pitch Competition</a>
+                <a class="page-scroll" href="events.html#upcoming-events">Other Events</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <button class="dropbtn"><a href="get-involved.html">Get Involved</a></button>
+              <div class="dropdown-content">
+                <a class="page-scroll" href="get-involved.html#open-positions">Open Positions</a>
+                <a class="page-scroll" href="get-involved.html#become-a-sponsor">Become a Sponsor</a>
+                <a class="page-scroll" href="get-involved.html#join-our-newsletter">Join Our Newsletter</a>
+                <a class="page-scroll" href="get-involved.html#contact-us">Contact Us</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Side navigation -->
+  <div class="sidenav" style="left: 20px">
+    <a class="page-scroll" style="color: rgb(182, 182, 182); padding: 10px 3px 0px 3px"><b>About Us</b></a>
+    <hr>
+    <a class="page-scroll" href="#who-are-we">Who Are We?</a>
+    <a class="page-scroll" href="#sbs-team">Our Team</a>
+    <a class="page-scroll" href="#advisors">Our Advisors</a>
+    <a class="page-scroll" href="#partners">Our Partners</a>
+  </div>
+
+  <!-- Page Header -->
+  <header class="masthead hero-bkg-animated" style="background-image: url('img/cubes2.png')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-10 mx-auto" style="left: 80px">
+          <div class="typewriter page-heading hidden">
+            <h2 style="text-align: right; font-size: 70px">ABOUT US</h1>
+              <hr class="style-two">
+              <h2 style="color: white; font-size: 18px; font-weight: 400; text-align: right;">PROVIDING BLOCKCHAIN
+                SOLUTIONS TO SATISFY THE NEEDS OF YOUR BUSINESS OR ORGANIZATION</h2>
+              <div style="float: right; padding: 30px">
+                <a class="btn page-scroll" href="#who-are-we" style="border-color: green; border-radius: 8px">Learn
+                  More &NonBreakingSpace; &darr;</a>
+              </div>
           </div>
         </div>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <!-- Main Content -->
+  <!-- Main Content -->
+  <div class="container" style="margin-left: 123px">
+    <div class="row">
+      <div class="col-lg-8 col-lg-10 mx-auto">
+        <section id="who-are-we">
+          <p></p>
+        </section>
+        <h2 class="section-heading hidden pb-2">
+          <b>WHO ARE WE?</b>
+        </h2>
+        <hr width="15%" style="border-width: 7px">
+        <p class="hidden pb-4" style="text-align: justify">Spartan Blockchain Solutions (SBS) is a student-run,
+          non-profit blockchain advisory and
+          advocacy
+          firm. Our mission is to provide local businesses and organizations with innovative blockchain solutions while
+          jumpstarting Michigan State University’s ecosystem to become a leading academic institution in the blockchain
+          space. Our analysts develop skills through internal workshops, client engagements, and networking with
+          professionals in the blockchain space. We strive to help our student analysts and managers develop unique
+          skills that will allow them to pursue
+          careers in emerging technologies. The SBS Engagement Team interacts with clients
+          to provide value and solve complex business problems by leveraging some of the most cutting-edge software
+          platforms in the
+          blockchain space.</p>
+      </div>
+    </div>
+  </div>
+
+  <header class="masthead" style="background-image: url('img/prism.png'); background-color: black">
+    <div class="overlay" style="background-image: linear-gradient(to right,rgba(0,0,0,0.25),rgba(75,75,75,0.2),rgba(175,175,175,0.12))"></div>
     <div class="container" style="margin-left: 123px">
-      <div class="row">
+      <div class="row pt-5 pb-5">
         <div class="col-lg-8 col-lg-10 mx-auto">
-          <section id = "spartan-blockchain-solutions"> 
-            <p></p>
-          </section>
-          <h2 class="section-heading">
-            <b>CONSULTING SERVICES</b>
-          </h2>
-          <p>Spartan Blockchain Solutions (SBS) is a student-run, nonprofit blockchain advisory firm which aims to provide local businesses and organizations with innovative blockchain solutions while developing our student consultants and developers as leaders in the blockchain space. The SBS Engagement Team interacts with clients to provide value and solve complex business problems by leveraging some of the best software platforms in the blockchain space.</p>
-          <hr style= "border-color:white">
-          <hr class="style-eight">
-
-          <section id = "research-case-studies">
-            <p></p>
-          </section>
-          <h2 class="section-heading">
-            <b>RESEARCH CASE STUDIES</b>
-          </h2>
-          <p>Our research teams at Spartan Blockchain Solutions explore innovative applications of blockchain technology. Our analysts develop skills through internal workshops, client engagements, and networking with professionals in the blockchain space. If you are interested in applying to become a business or technical analyst on one of our research teams, click <a href="get-involved.html#open-positions">here</a> to learn about open positions.</p>
-          <hr style= "border-color:white">
-          
           <section id="sbs-team">
-          <p></p>
-          <hr style= "border-color:white">
-          <hr class="style-eight">
           </section>
-          <hr class="style-three">
-          <p></p>
-          <h2 class="section-heading">
-            <b>SBS MANAGEMENT TEAM</b>
-          </h2>
-          <hr class="style-three">
-          <p></p>
-          <div class="pic_row">
-            <a target="_blank" class="pic_item" href="https://www.linkedin.com/in/siddhant-chhabra-540207bb/">
-              <div>
-                <img class="profileImgSbs" src="img/sidd.png" />
-                <p class="position"> <b class = "position_name">Siddhant Chhabra</b><br>Managing Director</p>
-              </div>
-            </a>
-            <a target="_blank" class="pic_item" href="https://www.linkedin.com/in/sean-b-kennedy/">
-              <div>
-                <img class="profileImgSbs" src="img/sean.jpg" />
-                <p class="position"><b class="position_name">Sean Kennedy</b><br>Lead Blockchain Engineer</p>
-              </div>
-            </a>
+          <h3 class="team-header pb-3 hidden" style="font-size: 28pt">OUR TEAM</h3>
+          <hr width="15%" style="border-width: 7px">
+          <div class="pic_row mt-5 mb-2 hidden">
             <a target="_blank" class="pic_item" href="https://www.linkedin.com/in/andrewgmarquardt/">
               <div>
-                <img class="profileImgSbs" src="img/andrew.png"/>
-                <p class="position"><b class="position_name">Andrew Marquardt</b><br>Senior Blockchain Consultant</p>
+                <img class="profileImgSbs" src="img/andrew.png" />
+                <p class="position"><b class="position_name">Andrew Marquardt</b><br>President</p>
               </div>
             </a>
-            <a target="_blank" class="pic_item" href="https://www.linkedin.com/in/charlie-kolacki-0a678411b/">
+            <a target="_blank" class="pic_item" href="https://www.linkedin.com/in/sean-kennedy-096ba616b/">
               <div>
-                <img class="profileImgSbs" src="img/charlie.png" />
-                <p class="position"><b class="position_name">Charlie Kolacki</b><br>Research Team Manager</p>
+                <img class="profileImgSbs" src="img/sean.jpg" />
+                <p class="position"><b class="position_name">Sean Kennedy</b><br>Managing Director & V.P. of Technology</p>
+              </div>
+            </a>
+            <a target="_blank" class="pic_item" href="https://www.linkedin.com/in/maggie-francis/">
+              <div>
+                <img class="profileImgSbs" src="img/maggie.jpg" />
+                <p class="position"><b class="position_name">Maggie Francis</b><br>Vice President of Diversity and
+                  Inclusion</p>
               </div>
             </a>
           </div>
           <p></p>
-          <h2 class="section-heading">
-            <b>SBS INNOVATION TEAM</b>
-          </h2>
-          <hr class="style-three">
+          <div class="pic_row hidden">
+            <a target="_blank" class="pic_item" href="https://www.linkedin.com/in/gerrygriffith/">
+              <div>
+                <img class="profileImgSbs" src="img/gerry.jpeg" />
+                <p class="position"><b class="position_name">Gerry Griffith</b><br>Vice President of Finance and Legal</p>
+              </div>
+            </a>
+            <a target="_blank" class="pic_item" href="https://www.linkedin.com/in/drew-g-a0010b12a/">
+              <div>
+                <img class="profileImgSbs" src="img/drew.png" />
+                <p class="position"><b class="position_name">Drew Goretzka</b><br>Marketing and Outreach Director</p>
+              </div>
+            </a>
+            <a target="_blank" class="pic_item" href="https://www.linkedin.com/in/gigi-ngcobo/">
+              <div>
+                <img class="profileImgSbs" src="img/gigi.jpg" />
+                <p class="position"><b class="position_name">Gigi Ngcobo</b><br>Chief Marketing Officer</p>
+              </div>
+            </a>
+          </div>
           <p></p>
-          <p></p>
-          <div class="pic_row">
+          <div class="pic_row hidden">
             <a target="_blank" class="pic_item" href="https://www.linkedin.com/in/colin-barnes-327969135/">
               <div>
                 <img class="profileImgSbs" src="img/colin.png" />
-                <p class="position"><b class="position_name">Colin Barnes</b><br>Junior Blockchain Developer</p>
-              </div>
-            </a>
-            <a target="_blank" class="pic_item" href="https://www.linkedin.com/in/sahilaswani/">
-              <div>
-                <img class="profileImgSbs" src="img/sahil.png" />
-                <p class="position"><b class="position_name">Sahil Aswani</b><br>Blockchain Controls Engineer</p>
-              </div>
-            </a>
-            <a target="_blank" class="pic_item" href="https://www.linkedin.com/in/parkernolan/">
-              <div>
-                <img class="profileImgSbs" src="img/parker.png" />
-                <p class="position"><b class="position_name">Parker Nolan</b><br>Senior Analyst</p>
-              </div>
-            </a>
-          </div>
-          <p></p>
-          <div class="pic_row">
-            <a target="_blank" class="pic_item" href="https://www.linkedin.com/in/sawyer-ruben-a69173149/">
-              <div>
-                <img class="profileImgSbs" src="img/sawyer.png" />
-                <p class="position"><b class="position_name">Sawyer Ruben</b><br>Senior Analyst</p>
+                <p class="position"><b class="position_name">Colin Barnes</b><br>Group Manager</p>
               </div>
             </a>
             <a target="_blank" class="pic_item" href="https://www.linkedin.com/in/samantha-stevons/">
               <div>
                 <img class="profileImgSbs" src="img/samantha.png" />
-                <p class="position"><b class="position_name">Samantha Stevons</b><br>Senior Analyst</p>
+                <p class="position"><b class="position_name">Samantha Stevons</b><br>Group Manager</p>
               </div>
             </a>
-            <a target="_blank" class="pic_item" href="https://www.linkedin.com/in/yusef-tahawi-2913a210a/">
+            <a target="_blank" class="pic_item" href="https://www.linkedin.com/in/parkernolan/">
               <div>
-                <img class="profileImgSbs" src="img/yusef.png" />
-                <p class="position"><b class="position_name">Yusef Tahawi</b><br>Senior Analyst</p>
+                <img class="profileImgSbs" src="img/parker.png" />
+                <p class="position"><b class="position_name">Parker Nolan</b><br>Group Manager</p>
               </div>
             </a>
+
           </div>
           <p></p>
-          <div class="pic_row">
+          <div class="pic_row hidden">
+            <a target="_blank" class="pic_item" href="https://www.linkedin.com/in/sawyer-ruben-a69173149/">
+              <div>
+                <img class="profileImgSbs" src="img/sawyer.png" />
+                <p class="position"><b class="position_name">Sawyer Ruben</b><br>Group Manager</p>
+              </div>
+            </a>
             <a target="_blank" class="pic_item" href="https://www.linkedin.com/in/majeed-fardin-431686153/">
               <div>
                 <img class="profileImgSbs" src="img/majeed.png" />
-                <p class="position"><b class="position_name">Majeed Fardin</b><br>Technical Analyst</p>
+                <p class="position"><b class="position_name">Majeed Fardin</b><br>Senior Analyst</p>
               </div>
             </a>
             <a target="_blank" class="pic_item" href="https://www.linkedin.com/in/christopher-nosowsky/">
               <div>
                 <img class="profileImgSbs" src="img/chris.png" />
-                <p class="position"><b class="position_name">Chris Nosowsky</b><br>Technical Analyst</p>
+                <p class="position"><b class="position_name">Chris Nosowsky</b><br>Senior Analyst</p>
+              </div>
+            </a>
+          </div>
+          <p></p>
+          <div class="pic_row hidden">
+            <a target="_blank" class="pic_item" href="https://www.linkedin.com/in/tyler-weisner-a7a65715b/">
+              <div>
+                <img class="profileImgSbs" src="img/tyler.png" />
+                <p class="position"><b class="position_name">Tyler Weisner</b><br>Senior Analyst</p>
               </div>
             </a>
             <a target="_blank" class="pic_item" href="https://www.linkedin.com/in/angelosavich/">
               <div>
                 <img class="profileImgSbs" src="img/angelo.png" />
-                <p class="position"><b class="position_name">Angelo Savich</b><br>Technical Analyst</p>
+                <p class="position"><b class="position_name">Angelo Savich</b><br>Senior Analyst</p>
               </div>
             </a>
-          </div>
-          <p></p>
-          <div class="pic_row">
-            <a target="_blank" class="pic_item" href="https://www.linkedin.com/in/tyler-weisner-a7a65715b/" style="width: 33%">
-              <div>
-                <img class="profileImgSbs" src="img/tyler.png"/>
-                <p class="position"><b class="position_name">Tyler Weisner</b><br>Technical Analyst</p>
-              </div>
-            </a>
-            <a target="_blank" class="pic_item" href="https://www.linkedin.com/in/daniel-ruvins-770ba6170/" style="width: 33%">
-              <div>
-                <img class="profileImgSbs" src="img/daniel.png" />
-                <p class="position"><b class="position_name">Daniel Ruvins</b><br>Business Analyst</p>
-              </div>
-            </a>
-            <a target="_blank" class="pic_item" href="https://www.linkedin.com/in/gabriel-aroh-598406156/" style="width: 33%">
+
+            <a target="_blank" class="pic_item" href="https://www.linkedin.com/in/gabriel-aroh-598406156/">
               <div>
                 <img class="profileImgSbs" src="img/gabriel.png" />
                 <p class="position"><b class="position_name">Gabriel Aroh</b><br>Business Analyst</p>
@@ -276,86 +272,152 @@
             </a>
           </div>
           <p></p>
-          <hr style= "border-color:white">
-          <p></p>
-          <hr class="style-eight">
-          <section id = "project-proposals">
-            <p></p>
+          <div class="pic_row hidden">
+            <a target="_blank" class="pic_item" href="https://www.linkedin.com/in/anna-debiasi/" style="width: 33%">
+              <div>
+                <img class="profileImgSbs" src="img/anna.jpg" />
+                <p class="position"><b class="position_name">Anna De Biasi</b><br>Technical Analyst</p>
+              </div>
+            </a>
+            <a target="_blank" class="pic_item" href="https://www.linkedin.com/in/abhijit-vyas-706784141/" style="width: 33%">
+              <div>
+                <img class="profileImgSbs" src="img/abhi.png" />
+                <p class="position"><b class="position_name">Abhijit Vyas</b><br>Business Analyst</p>
+              </div>
+            </a>
+          </div>
+          <section id="advisors">
           </section>
-          <h2 class="section-heading">
-            <b>PROJECT PROPOSALS</b>
-          </h2>
-          <hr class="style-three">
-          <hr class="style-two">
-          <p>Do you have a business need for which a blockchain solution might be appropriate? Do you have an idea for a blockchain use case that you would like to see us research? If the answer to either of these questions is yes, we would love to hear from you and help. Please use this <a href="https://docs.google.com/forms/d/e/1FAIpQLSeOQQPDvxXmBkGzejAuX85O-XZzz90ZhMwSDljNa--QOYQivA/viewform">form</a> to describe the idea or the needs of your business, and our team will help you determine if a blockchain solution is right for you!</p>
-          <p style="text-align: right">-Spartan Blockchain Team</p>
-          <hr class="style-two">
-        </div>
-      </div>
-    </div>
-
-    <hr>
-
-    <!-- Footer -->
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-md-10 mx-auto">
-            <ul class="list-inline text-center">
-              <li class="list-inline-item">
-                <a href="https://www.linkedin.com/company/spartan-blockchain-cryptocurrency-club/">
-                  <span class="fa-stack fa-lg">
-                    <i class="fas fa-circle fa-stack-2x"></i>
-                    <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
-                  </span>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="https://www.instagram.com/spartanblockchain/">
-                  <span class="fa-stack fa-lg">
-                    <i class="fas fa-circle fa-stack-2x"></i>
-                    <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
-                  </span>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="https://www.facebook.com/msublockchain/">
-                  <span class="fa-stack fa-lg">
-                    <i class="fas fa-circle fa-stack-2x"></i>
-                    <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
-                  </span>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="https://www.github.com/spartanblockchain">
-                  <span class="fa-stack fa-lg">
-                    <i class="fas fa-circle fa-stack-2x"></i>
-                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-                  </span>
-                </a>
-              </li>
-            </ul>
-            <p class="copyright text-muted">Copyright &copy; Spartan Blockchain 2019</p>
+          <h3 class="team-header pb-3 pt-5 hidden">Professional Advisors</h3>
+          <hr width="15%" style="border-width: 7px">
+          <div class="pic_row mt-5 mb-2 hidden">
+            <a target="_blank" class="pic_item" href="https://www.linkedin.com/in/rohunjauhar" style="width: 33%">
+              <div>
+                <img class="profileImgSbs" src="img/rohun.jpg" />
+                <p class="position"><b class="position_name">Rohun Jauhar</b><br>Jauhar Capital</p>
+              </div>
+            </a>
+            <a target="_blank" class="pic_item" href="https://www.linkedin.com/in/jeffrayis" style="width: 33%">
+              <div>
+                <img class="profileImgSbs" src="img/jeff.jpg" />
+                <p class="position"><b class="position_name">Jeff Rayis</b><br>Michigan State University</p>
+              </div>
+            </a>
+          </div>
+          <h3 class="team-header pb-3 pt-5 hidden">Faculty Advisors</h3>
+          <hr width="15%" style="border-width: 7px">
+          <div class="pic_row mt-5 mb-3  hidden">
+            <a target="_blank" class="pic_item" href="https://www.linkedin.com/in/neilkane">
+              <div>
+                <img class="profileImgSbs" src="img/neil.jpg" />
+                <p class="position"><b class="position_name">Neil Kane</b><br>Director of Undergraduate
+                  Entrepreneurship</p>
+              </div>
+            </a>
+            <a target="_blank" class="pic_item" href="https://www.linkedin.com/in/carla-reyes-67a90181">
+              <div>
+                <img class="profileImgSbs" src="img/carla.jpg" />
+                <p class="position"><b class="position_name">Carla Reyes</b><br>Assistant Professor of Law & Director
+                  of Legal RnD</p>
+              </div>
+            </a>
+            <a target="_blank" class="pic_item" href="https://www.linkedin.com/in/joseph-joyce-ph-d-1803a1/">
+              <div>
+                <img class="profileImgSbs" src="img/joseph.jpg" />
+                <p class="position"><b class="position_name">Joseph Joyce</b><br>Assistant Professor of Supply Chain
+                  Management</p>
+              </div>
+            </a>
           </div>
         </div>
       </div>
-    </footer>
+    </div>
+  </header>
+  <header class="masthead" style="background-color: white">
+    <div class="container" style="margin-left: 123px">
+      <div class="row pt-3">
+        <div class="col-lg-8 col-lg-10 mx-auto">
+          <section id="partners">
+          </section>
+          <h3 class="team-header pb-3 pt-5 hidden" style="color: black">Our Partners</h3>
+          <hr width="15%" style="border-width: 7px">
+          <div class="mt-4 hidden">
+            <img style="width: 450px; padding: 10px 10px 10px 10px" src="img/consensys.png" />
+            <img style="width: 450px; padding: 10px 10px 10px 10px" src="img/msu-hatch.png" />
+            <img style="width: 300px; padding: 10px 10px 10px 10px" src="img/undergrad-entrepreneurship.jpg" />
+            <img style="width: 250px; padding: 10px 10px 10px 10px; border-radius: 10%" src="img/blockchain-at-michigan.png" />
+            <img style="width: 350px; padding: 10px 10px 10px 10px" src="img/blockchain-education-network.png" />
+          </div>
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </header>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
+  <hr>
 
-    <!-- Custom scripts for this template -->
-    <script src="js/clean-blog.min.js"></script>
-    <script src="js/page-scroll.js"></script>
-    <script src="js/jquery-easing.min.js"></script>
-    <script src="js/jquery.js"></script>
-    <script src="js/wow.js"></script>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto hidden">
+          <ul class="list-inline text-center">
+            <li class="list-inline-item">
+              <a href="https://www.linkedin.com/company/spartan-blockchain-cryptocurrency-club/">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.instagram.com/spartanblockchain/">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.facebook.com/msublockchain/">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.github.com/spartanblockchain">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+          <p class="copyright text-muted">Copyright &copy; Spartan Blockchain 2019</p>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-  </body>
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Contact Form JavaScript -->
+  <script src="js/jqBootstrapValidation.js"></script>
+  <script src="js/contact_me.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+  <script src="js/page-scroll.js"></script>
+  <script src="js/jquery-easing.min.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/wow.js"></script>
+  <script src="js/scroll-animate.js"></script>
+
+</body>
 
 </html>
