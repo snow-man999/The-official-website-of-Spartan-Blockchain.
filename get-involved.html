@@ -1,256 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
 
-    <meta charset="utf-8">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <meta charset="utf-8">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <title>Spartan Blockchain</title>
+  <title>Spartan Blockchain</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom fonts for this template -->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+    rel='stylesheet' type='text/css'>
 
-    <!-- Custom styles for this template -->
-    <link href="css/clean-blog.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/clean-blog.css" rel="stylesheet">
 
-  </head>
+</head>
 
-  <body>
+<body onload="animateHTML().init();">
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-      <div class="container">
-        <a href="index.html">
-          <img src = "img/logo2.jpg"  style="height: 50px">
-        </a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fas fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <div class="dropdown">
-                <button class="dropbtn"><a href="index.html">About Us</a></button>
-                <div class="dropdown-content">
-                  <a class="page-scroll" href="index.html#who-are-we">Who Are We?</a>
-                  <a class="page-scroll" href="index.html#our-pillars">Our Pillars</a>
-                  <a class="page-scroll" href="index.html#meet-the-team">Meet the Team</a>
-                </div>
-              </div>
-            </li>
-            <li class="nav-item">
-              <div class="dropdown">
-                <button class="dropbtn"><a href="education.html">Education</a></button>
-                <div class="dropdown-content">
-                  <a class="page-scroll" href="education.html#what-is-blockchain">What is Blockchain?</a>
-                  <a class="page-scroll" href="education.html#our-workshops">Our Workshops</a>
-                  <a class="page-scroll" href="education.html#blockchain-foundations-and-applications">Blockchain: Foundations and Applications</a>
-                </div>
-              </div>
-            </li>
-            <li class="nav-item">
-              <div class="dropdown">
-                <button class="dropbtn"><a href="consulting.html">Spartan Blockchain Solutions</a></button>
-                <div class="dropdown-content">
-                  <a class="page-scroll" href="consulting.html#spartan-blockchain-solutions">Consulting Services</a>
-                  <a class="page-scroll" href="consulting.html#research-case-studies">Research Case Studies</a>
-                  <a class="page-scroll" href="consulting.html#sbs-team">Our Team</a>
-                  <a class="page-scroll" href="consulting.html#project-proposals">Project Proposals</a>
-                </div>
-              </div>
-            </li>
-            <li class="nav-item">
-              <div class="dropdown">
-                <button class="dropbtn"><a href="events.html" style="color: green">Innovation Competition</a></button>
-                <div class="dropdown-content">
-                  <a class="page-scroll" href="events.html#meetup">Community Meetup</a>
-                  <a class="page-scroll" href="events.html#case-competition">Pitch Competition</a>
-                  <a class="page-scroll" href="events.html#upcoming-events">Other Events</a>
-                </div>
-              </div>
-            </li>
-            <li class="nav-item">
-              <div class="dropdown">
-                <button class="dropbtn"><a href="get-involved.html">Get Involved</a></button>
-                <div class="dropdown-content">
-                  <a class="page-scroll" href="#open-positions">Open Positions</a>
-                  <a class="page-scroll" href="#become-a-sponsor">Become a Sponsor</a>
-                  <a class="page-scroll" href="#join-our-newsletter">Join Our Newsletter</a>
-                  <a class="page-scroll" href="#contact-us">Contact Us</a>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Side navigation -->
-    <div class="sidenav">
-      <a class="page-scroll" style="color: rgb(182, 182, 182); padding: 10px 3px 0px 3px"><b>Get Involved</b></a>
-      <hr>
-      <a class="page-scroll" href="#open-positions">Open Positions</a>
-      <a class="page-scroll" href="#become-a-sponsor">Become a Sponsor</a>
-      <a class="page-scroll" href="#join-our-newsletter">Join Our Newsletter</a>
-      <a class="page-scroll" href="#contact-us">Contact Us</a>
-    </div>
-
-    <!-- Page Header -->
-    <header class="masthead hero-bkg-animated" style="background-image: url('img/cubes2.png')">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-lg-10 mx-auto" style="left: 80px">
-            <div class="typewriter page-heading">
-              <h2 style="text-align: right; font-size: 70px">GET INVOLVED</h1>
-              <hr class="style-two">
-              <h2 style="color: white; font-size: 18px; font-weight: 400; text-align: right">LEARN ABOUT OPPORTUNITIES TO GET INVOLVED WITH SPARTAN BLOCKCHAIN</h2>
-              <div style="float: right; padding: 30px">
-                  <a class="btn page-scroll" href="#open-positions" style="background-color: green; color: white; border-color: green; border-radius: 8px">Learn More</a>
-                  <a class="btn page-scroll" href="#join-our-newsletter" style="background-color: rgba(0, 128, 0, 0); color: white; border-color: green; border-radius: 8px">Join Our Newsletter &rarr;</a>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a href="index.html">
+        <img src="img/sbs.png" style="height: 40px">
+      </a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <div class="dropdown">
+              <button class="dropbtn"><a href="index.html">Home</a></button>
+              <div class="dropdown-content" style="background-color: white">
+                <a class="page-scroll" href="index.html#who-are-we">Our Services</a>
+                <a class="page-scroll" href="index.html#our-pillars">Our Pillars</a>
+                <a class="page-scroll" href="index.html#project-proposals">Project Proposals</a>
               </div>
             </div>
-          </div>
-        </div>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <button class="dropbtn"><a href="consulting.html">About Us</a></button>
+              <div class="dropdown-content">
+                <a class="page-scroll" href="consulting.html#who-are-we">Who Are We?</a>
+                <a class="page-scroll" href="consulting.html#sbs-team">Our Team</a>
+                <a class="page-scroll" href="consulting.html#advisors">Our Advisors</a>
+                <a class="page-scroll" href="consulting.html#partners">Our Partners</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <button class="dropbtn"><a href="education.html">Education</a></button>
+              <div class="dropdown-content">
+                <a class="page-scroll" href="education.html#what-is-blockchain">What is Blockchain?</a>
+                <a class="page-scroll" href="education.html#our-workshops">Our Workshops</a>
+                <a class="page-scroll" href="education.html#blockchain-foundations-and-applications">Blockchain:
+                  Foundations and Applications</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <button class="dropbtn"><a href="events.html">Events</a></button>
+              <div class="dropdown-content">
+                <a class="page-scroll" href="events.html#meetup">Community Meetup</a>
+                <a class="page-scroll" href="events.html#case-competition">Pitch Competition</a>
+                <a class="page-scroll" href="events.html#upcoming-events">Other Events</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <button class="dropbtn"><a href="get-involved.html">Get Involved</a></button>
+              <div class="dropdown-content">
+                <a class="page-scroll" href="#open-positions">Open Positions</a>
+                <a class="page-scroll" href="#become-a-sponsor">Become a Sponsor</a>
+                <a class="page-scroll" href="#join-our-newsletter">Join Our Newsletter</a>
+                <a class="page-scroll" href="#contact-us">Contact Us</a>
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
-    </header>
+    </div>
+  </nav>
 
-    <!-- Main Content -->
-    <div class="container" style="margin-left: 123px">
+  <!-- Side navigation -->
+  <div class="sidenav">
+    <a class="page-scroll" style="color: rgb(182, 182, 182); padding: 10px 3px 0px 3px"><b>Get Involved</b></a>
+    <hr>
+    <a class="page-scroll" href="#open-positions">Open Positions</a>
+    <a class="page-scroll" href="#become-a-sponsor">Become a Sponsor</a>
+    <a class="page-scroll" href="#join-our-newsletter">Join Our Newsletter</a>
+    <a class="page-scroll" href="#contact-us">Contact Us</a>
+  </div>
+
+  <!-- Page Header -->
+  <header class="masthead hero-bkg-animated" style="background-image: url('img/cubes2.png')">
+    <div class="overlay"></div>
+    <div class="container">
       <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-          <section id = "open-positions"> 
-            <p></p>
-          </section>
-          <h2 class="section-heading">
-            <b>OPEN POSITIONS</b>
-          </h2>
-          <p>We are actively filling the following positions. If you are interested in learning more about a position or applying, please fill out this <b><a href="https://forms.gle/GVyLaBcxrguYXWjz9">form</a></b> expressing your interest, and we will get back to you with more information about applying!</p>
-          <h5 style = "text-decoration: none">Diversity and Inclusion Officer (Spartan Blockchain Executive Board)</h5>
-          <p>As the Diversity and Inclusion Officer, you will sit in the most unique and value-driving role at Spartan Blockchain. In this position you will support the organizational mission by seeking partnership opportunities with student groups at Michigan State University and focus on making Spartan Blockchain more accessible and attractive to members of underrepresented communities.</p>
-          <h5 style = "text-decoration: none">Vice President of Finance and Legal (Spartan Blockchain Executive Board)</h5>
-          <p>As the Vice President of Finance and Legal, you will lead all day-to-day finance and legal operations for Spartan Blockchain and Spartan Blockchain Solutions, LLC, a 501(c)3 non-profit corporation. This includes overseeing all organizational cash flow in-line with Spartan Blockchain’s budget, administering and reviewing all financial plans, and correcting variances as appropriate.</p>
-          <h5 style = "text-decoration: none">Marketing and Events Manager (Spartan Blockchain)</h5>
-          <p>As the Marketing and Events Manager, you will manage all marketing and events personnel and work to further develop Spartan Blockchain’s strategic marketing strategy going forward.</p>
-          <h5 style = "text-decoration: none">Graphic Designer (Spartan Blockchain)</h5>
-          <p>As the Graphic Designer, you will be responsible for the creation and curation of designs for all promotional content published by Spartan Blockchain, including posters, digital flyers, event programs, web graphics, and promotional items.</p>
-          <h5 style = "text-decoration: none">Events Coordinator (Spartan Blockchain)</h5>
-          <p>As the Events Coordinator, you will oversee all aspects of external event planning and management. Responsibilities for the Events Coordinator include meeting with clients to work out event details, scouting locations, and booking food, entertainment, and staff.</p>
-          <h5 style = "text-decoration: none">Community Manager (Spartan Blockchain)</h5>
-          <p>As the Community Manager, you will manage and execute on all aspects of our social media marketing initiatives. This includes creating social media posts and engaging with our followers to increase overall Spartan Blockchain clickthrough rates and awareness.</p>
-          <h5 style = "text-decoration: none">Digital Content Writer (Spartan Blockchain)</h5>
-          <p>As the Digital Content Writer, you will work with the entire marketing team to compose all Spartan Blockchain-related articles and press releases on a recurring basis. Background in journalism and/or digital marketing is applicable.</p>
-          <h5 style = "text-decoration: none">Senior Analyst (Spartan Blockchain Solutions)</h5>
-          <p>As a Senior Analyst, you will provide overarching project management and expertise on implementing sustainable, impactful solutions for our clients. You will participate in weekly meetings with your research group as well as biweekly all-hands meetings with the entire Spartan Blockchain Solutions team. Responsibilities include working with clients to obtain business and technical specifications for blockchain software/hardware integration.</p>
-          <h5 style = "text-decoration: none">Business Analyst (Spartan Blockchain Solutions)</h5>
-          <p>As a Business Analyst, you will use your top-down business knowledge and business development experience to play an integral role on one of our Spartan Blockchain Solutions research teams. You will participate in weekly meetings with your research group as well as biweekly all-hands meetings with the entire Spartan Blockchain Solutions team. You will be responsible for leading the business details of your group’s research, including client-engagement and business model development.</p>
-          <h5 style = "text-decoration: none">Technical Analyst (Spartan Blockchain Solutions)</h5>
-          <p>As a Technical Analyst, you will use your technical knowledge and experience to play an integral role on one of our Spartan Blockchain Solutions research teams. You will participate in weekly meetings with your research group as well as biweekly all-hands meetings with the entire Spartan Blockchain Solutions team. You will be responsible for leading the technical details of your group’s research, including technical architecture and potential proof-of-concept development. This may also include engaging with your client to understand technical details of their existing systems. An ideal candidate will have a background in IT, programming, and/or computer hardware integration.</p>
-          <h5 style = "text-decoration: none">Legal Analyst (Spartan Blockchain Solutions)</h5>
-          <p>As a Legal Analyst, you will use your legal expertise and experience to play an integral role on one of our Spartan Blockchain Solutions research teams. You will participate in weekly meetings with your research group as well as biweekly all-hands meetings with the entire Spartan Blockchain Solutions team. You will be responsible for providing overarching legal guidance through intensive research of your team’s research problem and potential solutions. An ideal candidate will have an interest or background in the study of law.</p>
-          <section id = "become-a-sponsor">
-            <hr style= "border-color:white">
-            <hr class="style-eight">
-            <p></p>
-          </section>
-          <h2 class="section-heading">
-            <b>BECOME A SPONSOR</b>
-          </h2>
-          <p>Are you a person, business, or organization interested in becoming a sponsor for Spartan Blockchain? If so, please fill out this <a href="https://docs.google.com/forms/d/e/1FAIpQLSeOQQPDvxXmBkGzejAuX85O-XZzz90ZhMwSDljNa--QOYQivA/viewform">form</a> so that we can better understand your interest and provide you with all relevant details about being one of our sponsors!</p>
-          
-          <section id = "join-our-newsletter">
-            <hr style= "border-color:white">
-            <hr class="style-eight">
-            <p></p>
-          </section>
-          <h2 class="section-heading">
-            <b>JOIN OUR NEWSLETTER</b>
-          </h2>
-          <p>Are you interested in receiving biweekly updates on Spartan Blockchain's current and future initiatives? Joining our email list is the best way to keep up with everything we are doing as an organization. To join, simply fill out this <a href="https://docs.google.com/forms/d/e/1FAIpQLSeOQQPDvxXmBkGzejAuX85O-XZzz90ZhMwSDljNa--QOYQivA/viewform">form</a> indicating in the dropdown menu that you would like to join our newsletter. You will be added to our email list and begin receiving information about all organizational activities.</p>
-          <hr style= "border-color:white">
-          <hr class="style-eight">
-
-          <section id = "contact-us">
-            <p></p>
-          </section>
-          <h2 class="section-heading">
-            <b>CONTACT US</b>
-          </h2>
-          <p>If you have any unanswered questions, concerns, or ideas, please fill out this <a href="https://docs.google.com/forms/d/e/1FAIpQLSeOQQPDvxXmBkGzejAuX85O-XZzz90ZhMwSDljNa--QOYQivA/viewform">contact form</a> and we'll get back to you as soon as possible!</p>
+        <div class="col-lg-8 col-lg-10 mx-auto" style="left: 80px">
+          <div class="typewriter page-heading hidden">
+            <h2 style="text-align: right; font-size: 70px">GET INVOLVED</h1>
+              <hr class="style-two">
+              <h2 style="color: white; font-size: 18px; font-weight: 400; text-align: right">LEARN ABOUT OPPORTUNITIES
+                TO GET INVOLVED WITH SPARTAN BLOCKCHAIN SOLUTIONS</h2>
+              <div style="float: right; padding: 30px">
+                <a class="btn page-scroll" href="#open-positions" style="border-color: green; border-radius: 8px">Learn
+                  More &NonBreakingSpace; &darr;</a>
+              </div>
+          </div>
         </div>
       </div>
     </div>
-    <hr>
+  </header>
 
-    <!-- Footer -->
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-md-10 mx-auto">
-            <ul class="list-inline text-center">
-              <li class="list-inline-item">
-                <a href="https://www.linkedin.com/company/spartan-blockchain-cryptocurrency-club/">
-                  <span class="fa-stack fa-lg">
-                    <i class="fas fa-circle fa-stack-2x"></i>
-                    <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
-                  </span>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="https://www.instagram.com/spartanblockchain/">
-                  <span class="fa-stack fa-lg">
-                    <i class="fas fa-circle fa-stack-2x"></i>
-                    <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
-                  </span>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="https://www.facebook.com/msublockchain/">
-                  <span class="fa-stack fa-lg">
-                    <i class="fas fa-circle fa-stack-2x"></i>
-                    <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
-                  </span>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="https://www.github.com/spartanblockchain">
-                  <span class="fa-stack fa-lg">
-                    <i class="fas fa-circle fa-stack-2x"></i>
-                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-                  </span>
-                </a>
-              </li>
-            </ul>
-            <p class="copyright text-muted">Copyright &copy; Spartan Blockchain 2019</p>
-          </div>
+  <!-- Main Content -->
+  <div class="container" style="padding-left: 130px;">
+    <div class="row">
+      <div class="col-lg-10 col-md-10 mx-auto">
+        <section id="open-positions">
+          <p></p>
+        </section>
+        <h2 class="section-heading hidden">
+          <b>OPEN POSITIONS</b>
+        </h2>
+        <p class="hidden">We are actively filling the following positions. If you are interested in learning more about
+          a position or applying, please fill out this <b><a href="https://forms.gle/GVyLaBcxrguYXWjz9">form</a></b>
+          expressing your interest, and we will get back to you with more information about applying!</p>
+        <h5 class="hidden" style="text-decoration: none">Graphic Designer</h5>
+        <p class="hidden">As the Graphic Designer, you will be responsible for the creation and curation of designs for
+          all promotional content published by Spartan Blockchain Solutions, including posters, digital flyers, event programs,
+          web graphics, and promotional items.</p>
+        <h5 class="hidden" style="text-decoration: none">Events Coordinator</h5>
+        <p class="hidden">As the Events Coordinator, you will oversee all aspects of external event planning and
+          management. Responsibilities for the Events Coordinator include meeting with clients to work out event
+          details, scouting locations, and booking food, entertainment, and staff.</p>
+        <h5 class="hidden" style="text-decoration: none">Community Manager</h5>
+        <p class="hidden">As the Community Manager, you will manage and execute on all aspects of our social media
+          marketing initiatives. This includes creating social media posts and engaging with our followers to increase
+          overall Spartan Blockchain clickthrough rates and awareness.</p>
+        <h5 class="hidden" style="text-decoration: none">Business Analyst</h5>
+        <p class="hidden">As a Business Analyst, you will use your top-down business knowledge and business development
+          experience to play an integral role on one of our Spartan Blockchain Solutions research teams. You will
+          participate in weekly meetings with your research group as well as biweekly all-hands meetings with the
+          entire Spartan Blockchain Solutions team. You will be responsible for leading the business details of your
+          group’s research, including client-engagement and business model development.</p>
+        <h5 class="hidden" style="text-decoration: none">Technical Analyst</h5>
+        <p class="hidden">As a Technical Analyst, you will use your technical knowledge and experience to play an
+          integral role on one of our Spartan Blockchain Solutions research teams. You will participate in weekly
+          meetings with your research group as well as biweekly all-hands meetings with the entire Spartan Blockchain
+          Solutions team. You will be responsible for leading the technical details of your group’s research, including
+          technical architecture and potential proof-of-concept development. This may also include engaging with your
+          client to understand technical details of their existing systems. An ideal candidate will have a background
+          in IT, programming, and/or computer hardware integration.</p>
+        <h5 class="hidden" style="text-decoration: none">Legal Analyst</h5>
+        <p class="hidden">As a Legal Analyst, you will use your legal expertise and experience to play an integral role
+          on one of our Spartan Blockchain Solutions research teams. You will participate in weekly meetings with your
+          research group as well as biweekly all-hands meetings with the entire Spartan Blockchain Solutions team. You
+          will be responsible for providing overarching legal guidance through intensive research of your team’s
+          research problem and potential solutions. An ideal candidate will have an interest or background in the study
+          of law.</p>
+        <section id="become-a-sponsor">
+          <hr style="border-color:white">
+          <hr class="style-eight">
+          <p></p>
+        </section>
+        <h2 class="section-heading hidden">
+          <b>BECOME A SPONSOR</b>
+        </h2>
+        <p class="hidden">Are you a person, business, or organization interested in becoming a sponsor for Spartan
+          Blockchain? If so, please fill out this <a href="https://docs.google.com/forms/d/e/1FAIpQLSeOQQPDvxXmBkGzejAuX85O-XZzz90ZhMwSDljNa--QOYQivA/viewform">form</a>
+          so that we can better understand your interest and provide you with all relevant details about being one of
+          our sponsors!</p>
+
+        <section id="join-our-newsletter">
+          <hr style="border-color:white">
+          <hr class="style-eight">
+          <p></p>
+        </section>
+        <h2 class="section-heading hidden">
+          <b>JOIN OUR NEWSLETTER</b>
+        </h2>
+        <p class="hidden">Are you interested in receiving biweekly updates on Spartan Blockchain's current and future
+          initiatives? Joining our email list is the best way to keep up with everything we are doing as an
+          organization. To join, simply fill out this <a href="https://docs.google.com/forms/d/e/1FAIpQLSeOQQPDvxXmBkGzejAuX85O-XZzz90ZhMwSDljNa--QOYQivA/viewform">form</a>
+          indicating in the dropdown menu that you would like to join our newsletter. You will be added to our email
+          list and begin receiving information about all organizational activities.</p>
+        <hr style="border-color:white">
+        <hr class="style-eight">
+
+        <section id="contact-us">
+          <p></p>
+        </section>
+        <h2 class="section-heading hidden">
+          <b>CONTACT US</b>
+        </h2>
+        <p class="hidden">If you have any unanswered questions, concerns, or ideas, please fill out this <a href="https://docs.google.com/forms/d/e/1FAIpQLSeOQQPDvxXmBkGzejAuX85O-XZzz90ZhMwSDljNa--QOYQivA/viewform">contact
+            form</a> and we'll get back to you as soon as possible!</p>
+      </div>
+    </div>
+  </div>
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto hidden">
+          <ul class="list-inline text-center">
+            <li class="list-inline-item">
+              <a href="https://www.linkedin.com/company/spartan-blockchain-cryptocurrency-club/">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.instagram.com/spartanblockchain/">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.facebook.com/msublockchain/">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.github.com/spartanblockchain">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+          <p class="copyright text-muted">Copyright &copy; Spartan Blockchain 2019</p>
         </div>
       </div>
-    </footer>
+    </div>
+  </footer>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
+  <!-- Contact Form JavaScript -->
+  <script src="js/jqBootstrapValidation.js"></script>
+  <script src="js/contact_me.js"></script>
 
-    <!-- Custom scripts for this template -->
-    <script src="js/clean-blog.min.js"></script>
-    <script src="js/page-scroll.js"></script>
-    <script src="js/jquery-easing.min.js"></script>
-    <script src="js/jquery.js"></script>
-    <script src="js/wow.js"></script>
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+  <script src="js/page-scroll.js"></script>
+  <script src="js/jquery-easing.min.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/wow.js"></script>
+  <script src="js/scroll-animate.js"></script>
 
-  </body>
+</body>
 
 </html>

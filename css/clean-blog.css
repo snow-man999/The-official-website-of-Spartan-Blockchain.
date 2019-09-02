@@ -28,6 +28,13 @@ h4 {
   font-family: 'Open Sans','Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+
+h3.team-header {
+  font-weight: 700;
+  color: white;
+  text-align: center;
+}
+
 h5 {
   font-size: 20px;
   font-family: 'Open Sans','Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -46,51 +53,16 @@ h6:hover {
   color: black;
 }
 
-.typewriter h1 {
-  /*font-family: monospace;  Web-safe typewriter-like font */
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid green; /* The typwriter cursor */
-   /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: 0em; /* Adjust as needed */
-  animation: 
-    typing 3s steps(26, end),
-    blinking-cursor 1s step-end infinite;
-}
-
-.typewriter h2 {
-  overflow: hidden;
-  
-  animation:
-    fade-in 3s;
-}
-
-/* The typing effect */
-@keyframes typing {
-  from { width: 0}
-  to { width: 100%}
-}
-
-/* The typewriter cursor effect */
-@keyframes blinking-cursor {
-  from, to { border-color: transparent }
-  50% { border-color: green; }
-}
-
-@keyframes fade-in {
-  from {color: rgba(255, 255, 255, 0); padding: 0px 0px}
-  to {color: white; padding: 0px 0px}
-}
 
 hr {
-  border-color: green;
+  border-color: rgb(0, 165, 0);
   border-width: 2px;
 }
 
 hr.style-two {
   border: 0;
   height: 2px;
-  background-image: linear-gradient(to right, rgba(0, 128, 0, 0.103), rgba(0, 128, 0, 0.5), green);
+  background-image: linear-gradient(to right, rgba(0, 128, 0, 0.103), rgba(0, 128, 0, 0.5), rgb(0, 165, 0));
 }
 
 hr.style-three {
@@ -142,17 +114,21 @@ blockquote {
   text-align: center;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 16px;
+  color: white;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 
 .position_name{
   margin: 0px;
   font-size: 22px;
-  color: green;
+  color: rgb(0, 165, 0);
 }
 
 .pic_row {
   display: inline-flex;
+  
   width: 100%;
 }
 .pic_item {
@@ -184,7 +160,7 @@ blockquote {
 }
 
 .section-heading {
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 700;
   margin-top: 60px;
   text-align: center;
@@ -264,22 +240,23 @@ img::-moz-selection {
 #mainNav .dropbtn {
   font-size: 12px;
   font-weight: 700;
-  letter-spacing: 0px;
+  letter-spacing: 1px;
   text-transform: uppercase;
   border: none;
   background-color: transparent;
-  padding: 10px 20px;
+  padding: 10px 25px;
+  z-index: 1.1;
 }
 
 #mainNav .dropbtn a:hover {
-  font-size: 13px;
+  font-size: 14px;
   text-decoration: none;
-  color: green;
+  color: rgb(0, 165, 0);
 }
 
 /* Dropdown button on hover & focus */
 #mainNav .dropbtn:hover, #mainNav .dropbtn:focus {
-  /*background-color: green;*/
+  /*background-color: rgb(0, 165, 0);*/
   color: white;
 }
 
@@ -287,7 +264,7 @@ img::-moz-selection {
   border: solid white;
   border-width: 0px 3px 3px 0px;
   display: inline-block;
-  padding: 3px;
+  padding: 0px;
 }
 
 
@@ -307,10 +284,10 @@ img::-moz-selection {
 #mainNav .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  background-color: #ffffff;
+  min-width: 280px;
   z-index: 1;
+  padding-top: 18px;
 }
 
 /* Links inside the dropdown */
@@ -336,6 +313,8 @@ img::-moz-selection {
 
 
 @media only screen and (min-width: 992px) {
+
+  
   #mainNav {
     border-bottom: 1px solid transparent;
     background: transparent;
@@ -359,6 +338,21 @@ img::-moz-selection {
 }
 
 @media only screen and (min-width: 992px) {
+  @keyframes fade-in {
+    from {opacity: 0; transform: scale(.8,.8)}
+    to {opacity: 1;}
+    100% {opacity: 1;}
+  }
+  .fade-in-element {
+    animation: fade-in 1.4s;
+  }
+  .hidden {
+    opacity: 0;
+    animation: fade-in 2s linear 1.5s 1 normal forwards;
+  }
+  .no-opacity {
+    opacity: 0;
+  }
   #mainNav {
     -webkit-transition: background-color 0.2s;
     transition: background-color 0.2s;
@@ -372,7 +366,7 @@ img::-moz-selection {
   #mainNav.is-fixed {
     /* when the user scrolls down, we hide the header right above the viewport */
     position: fixed;
-    top: -83px;
+    top: -73px;
     -webkit-transition: -webkit-transform 0.2s;
     transition: -webkit-transform 0.2s;
     transition: transform 0.2s;
@@ -396,18 +390,18 @@ img::-moz-selection {
   #mainNav.is-fixed .dropbtn {
     font-size: 12px;
     font-weight: 700;
-    letter-spacing: 0px;
+    letter-spacing: 1px;
     text-transform: uppercase;
     border: none;
     background-color: transparent;
     color: black;
-    padding: 10px 20px;
+    padding: 10px 25px;
   }
 
   #mainNav.is-fixed .dropbtn a:hover {
     font-size: 13px;
     text-decoration: none;
-    color: green;
+    color: rgb(0, 165, 0);
   }
 
   #mainNav.is-fixed .dropbtn:hover, #mainNav.is-fixed .dropbtn:focus {
@@ -431,6 +425,7 @@ img::-moz-selection {
     /* if the user changes the scrolling direction, we show the header */
     -webkit-transform: translate3d(0, 100%, 0);
     transform: translate3d(0, 100%, 0);
+    background-color: rgba(255, 255, 255, 0.9)
   }
 }
 
@@ -480,6 +475,8 @@ img::-moz-selection {
 
 @media screen and (max-width: 1100px) {
   .sidenav {display: none}
+  .no-opacity {opacity: 1;}
+  .hidden {opacity: 1;}
 }
 
 
@@ -505,7 +502,6 @@ header.masthead .overlay {
   background-image: linear-gradient(to right, rgba(0, 255, 0, 0.25), rgba(0, 100, 0, 0.1), rgba(0, 0, 255, 0.23));
 
 }
-
 
 
 .hero-bkg-animated {
@@ -558,7 +554,7 @@ header.masthead .site-heading {
   header.masthead .page-heading,
   header.masthead .post-heading,
   header.masthead .site-heading {
-    padding: 225px 0;
+    padding: 210px 0;
   }
 }
 
@@ -759,8 +755,15 @@ footer .copyright {
   padding: 15px 25px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  border-radius: 0;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: rgba(0, 128, 0, 0); 
+  color: white; border-color: green; 
+  border-radius: 8px;
+}
+
+.btn:hover {
+  background-color: green;
+  color: white;
 }
 
 .btn-primary {
