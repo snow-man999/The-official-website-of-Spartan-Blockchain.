@@ -10,22 +10,6 @@ body {
   font-family: 'Lora', 'Times New Roman', serif;
 }
 
-@keyframes fade-in {
-  from {opacity: 0; transform: scale(.8,.8)}
-  to {opacity: 1;}
-  100% {opacity: 1;}
-}
-.fade-in-element {
-  animation: fade-in 1.4s;
-}
-.hidden {
-  opacity: 0;
-  animation: fade-in 2s linear 1.5s 1 normal forwards;
-}
-.no-opacity {
-  opacity: 0;
-}
-
 p {
   line-height: 1.5;
   margin: 30px 0;
@@ -329,6 +313,22 @@ img::-moz-selection {
 
 
 @media only screen and (min-width: 992px) {
+  @keyframes fade-in {
+    from {opacity: 0; transform: scale(.8,.8)}
+    to {opacity: 1;}
+    100% {opacity: 1;}
+  }
+  .fade-in-element {
+    animation: fade-in 1.4s;
+  }
+  .hidden {
+    opacity: 0;
+    animation: fade-in 2s linear 1.5s 1 normal forwards;
+  }
+  .no-opacity {
+    opacity: 0;
+  }
+  
   #mainNav {
     border-bottom: 1px solid transparent;
     background: transparent;
